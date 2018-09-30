@@ -1,0 +1,126 @@
+.main-title {
+	/*height: 500px;*/
+	text-align: center;
+	border: red dashed 2px;
+	font-size: 80px;
+}
+.space {
+	height: 33vh;
+ 	font-family: monospace;
+ 	padding: 2rem;
+}
+
+.front-page {
+	height: 100vh;
+	background-color: #0F1626;
+	opacity: 0.9;
+	color: white;
+}
+
+.test {
+	border: dashed pink 2px;
+}
+
+.white-back-bar {
+	background-color: #FFFFFF;
+	padding: 30px;
+}
+
+.tinted-back-bar {
+	background-color: #e1e8e3;
+	/*D2D4C8*/
+}
+
+.project-graphic {
+	border: solid red 1px;
+	height:200px;
+}
+
+.gray-back-bar {
+	background-color: #0F1626;
+	opacity: 0.9;
+	padding-top: 30px;
+}
+
+.profile-pic {
+	height: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	overflow:auto;
+}
+
+.icon {
+	height: 60px;
+	width: 60px;
+}
+
+.icon-footer {
+	padding-top: 20px;
+}
+
+.title {
+	color:#36c;
+	text-align: center;
+	border: red dashed 2px;
+	font-size: 40px;
+	padding:40px;
+}
+
+.subtitle {
+	border: purple solid 2px;
+	font-size: 20px;
+	padding-top: 20px;
+}
+
+.icon:hover {
+	opacity: 0.6;
+	transition: all 0.5s;
+}
+
+#contact {
+	color: white;
+	text-align: center;
+	border: red dashed 2px;
+	font-size: 40px;
+	padding:40px;
+}
+
+#mail {
+	/*opacity: 0.9;*/
+	height: 60px;
+	width: 60px;
+}
+
+#mail:hover {
+	opacity: 0.4;
+	transition: all 0.5s;
+}
+
+.bold-subtitle {
+	font-weight: bold;
+}
+
+.loc-icon {
+	color: #0F1626;
+	font-size: 50px;
+}
+
+
+.tools-subcats {
+	text-align: left;
+	border: dashed blue 2px;
+}
+
+.footer-text {
+	color: white;
+	padding-bottom: 20px;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+/*#FF533D*/
+/*#AB987A*/
