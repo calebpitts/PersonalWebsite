@@ -1,24 +1,77 @@
-.main-title {
-	/*height: 500px;*/
-	text-align: center;
-	border: red dashed 2px;
-	font-size: 80px;
+.limit-container {
+	max-width: 900px;
 }
+
+.main-title {
+	text-align: center;
+	font-size: 80px;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+
+
+/* The sidebar menu */
+.sidenav {
+    width: 170px;
+    position: fixed;
+    z-index: 1;
+    top: 30px;
+    /*left: 10px;*/
+    right: 50px;
+    /*background: #eee;*/
+    overflow-x: hidden;
+    padding: 8px 0;
+    display: none;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: #485167;
+    display: block;
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 25px;
+}
+
+.sidenav-text {
+	/*font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 25px;*/
+}
+
+.sidenav a:hover {
+    color: black;
+}
+
+.main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+
+
+
+
 .space {
 	height: 33vh;
- 	font-family: monospace;
  	padding: 2rem;
+}
+
+.footer-space {
+	height: 10vh;
 }
 
 .front-page {
 	height: 100vh;
-	background-color: #0F1626;
-	opacity: 0.9;
-	color: white;
-}
-
-.test {
-	border: dashed pink 2px;
+	background-size: cover;
+	background-attachment: fixed;
+	box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+	background-image: url("yosemite.jpg");
 }
 
 .white-back-bar {
@@ -28,7 +81,6 @@
 
 .tinted-back-bar {
 	background-color: #e1e8e3;
-	/*D2D4C8*/
 }
 
 .project-graphic {
@@ -37,9 +89,17 @@
 }
 
 .gray-back-bar {
-	background-color: #0F1626;
+	background-color: #7F4145;
 	opacity: 0.9;
 	padding-top: 30px;
+}
+
+
+hr {
+    border: 0;
+    height: 0.5px;
+    background: #485167;
+    clear:both;
 }
 
 .profile-pic {
@@ -60,17 +120,32 @@
 }
 
 .title {
-	color:#36c;
+	color: #485167;
 	text-align: center;
-	border: red dashed 2px;
-	font-size: 40px;
-	padding:40px;
+	font-size: 60px;
+	padding-top:40px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 }
 
 .subtitle {
-	border: purple solid 2px;
-	font-size: 20px;
 	padding-top: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 25px;
+	color: #485167;
+}
+
+
+.text-style {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.align-subtitle{
+     height: 50px;
+     line-height: 50px;
 }
 
 .icon:hover {
@@ -81,9 +156,15 @@
 #contact {
 	color: white;
 	text-align: center;
-	border: red dashed 2px;
-	font-size: 40px;
-	padding:40px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 60px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.footer {
+	height: 33vh;
 }
 
 #mail {
@@ -97,24 +178,37 @@
 	transition: all 0.5s;
 }
 
+
+#contact-msg {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	color: black;/*#3b3b3b;*/
+}
+
 .bold-subtitle {
 	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 17px;
+}
+
+.bold-small-subtitle {
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
 }
 
 .loc-icon {
-	color: #0F1626;
-	font-size: 50px;
-}
-
-
-.tools-subcats {
-	text-align: left;
-	border: dashed blue 2px;
+	color: #7F4145;
 }
 
 .footer-text {
-	color: white;
-	padding-bottom: 20px;
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 }
 
 .nopadding {
@@ -122,5 +216,11 @@
    margin: 0 !important;
 }
 
+.no-rightpadding {
+	padding-right: 0;
+}
+
+
+/*#0F1626*/
 /*#FF533D*/
 /*#AB987A*/

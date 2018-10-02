@@ -5,8 +5,19 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="styles.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
 	</head>
 	<body>
+		<!-- Side navigation -->
+		<div class="sidenav sidenav-text">
+		  <a href="#"><span>Profile</span></a>
+		  <a href="#"><span>Projects</span></a>
+		  <a href="#"><span>Experiences</span></a>
+		  <a href="#"><span>Abilities</span></a>
+		  <a href="#"><span>Contacts</span></a>
+		</div>
+
 		<div class="row front-page">
 			<div class="container">
 				<div class="row">
@@ -19,36 +30,40 @@
 		</div>
 
 		<div class="row white-back-bar">
-			<div class="container">
+			<div class="limit-container container">
 				<div class="row">
 					<div class="title">Profile</div>
 				</div>
+				<hr>
 				<div class="row">
-					<div class="col-md-4 col-sm-12 about">
+					<div class="col-md-3 col-sm-12 no-rightpadding">
 						<p class="subtitle">About Me</p>
-						<p class="text-descriptive">this is about me. i like tacos. This is just filler for now.
-							This is just filler for now.This is just filler for now.This is just filler for now.This is just filler for now.This is just filler for now.This is just filler for now.This is just filler for now.This is just filler for now.This is just filler for now.This is just filler for now.This is just filler for now.
+						<p class="text-descriptive text-style">I am an aspiring Data Scientist. I'm also a 3rd year Data Science major at UC Irvine. I look for ways to make sense of the world with data. One independent project I completed was a python script that determines the overall sentiment of comment sections on YouTube videos. My goal is to create better applications that provide clarity in complicated situations.
 						</p>
 					</div>
-					<img class="col-md-4 col-sm-12 profile-pic" src="images/profile-pic.jpg" alt="Profile Image">
-					<div class="col-md-4 col-sm-12 about">
+					<img class="col-md-6 col-sm-12 profile-pic nopadding" src="images/profile-pic.jpg" alt="Profile Image">
+					<div class="col-md-3 col-sm-12 about">
 						<p class="subtitle">Details</p>
-						<p><span class="bold-subtitle">Name</span><br>Caleb Pitts</p>
-						<p><span class="bold-subtitle">Location</span><br><i class="fa fa-map-marker loc-icon"></i> Irvine, CA</p>
-						<br>
-						<p>Resume Link</p>
-						<p>Cover Letter Link</p>
-						<p>CV Link</p>
+						<p class="text-style"><span class="bold-subtitle">Name</span><br>Caleb Pitts</p>
+						<p class="text-style"><span class="bold-subtitle">Location</span><br><i class="fas fa-map-marker-alt loc-icon"></i> Irvine, CA</p>
+						
+						<p class="subtitle">Portfolio</p>
+						<div class="text-style">
+							<p><i class="fas fa-link loc-icon"></i> Resume (Coming Soon)</p>
+							<p><i class="fas fa-link loc-icon"></i> Cover Letter (Coming)</p>
+							<p><i class="fas fa-link loc-icon"></i> CV (Coming Soon)</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="row tinted-back-bar">
-			<div class="container">
+			<div class="limit-container container">
 				<div class="row">
 					<div class="title">Projects</div>
 				</div>
+				<hr>
 				<div class="row">
 					<div class="col-md-4 project-graphic">project 1</div>
 					<div class="col-md-4 project-graphic">project 2</div>
@@ -60,41 +75,47 @@
 					<div class="col-md-4 project-graphic">project 6</div>
 				</div>
 			</div>
+			<br>
+			<br>
+			<br>
+			<br>
 		</div>
 
 		<div class="row white-back-bar">
-			<div class="container">
+			<div class="limit-container container">
 				<div class="row">
 					<div class="title">Experiences</div>
 				</div>
+				<hr>
 				<div class="row">
 					<div class="col-md-4 subtitle">Education</div>
 				</div>
+				<br>
 				<div class="row">
 					<div class="col-md-4 col-sm-12 test">
 						<p><span class="bold-subtitle">University of California, Irvine</span></p>
-						<p>2016 - 2020</p>
+						<p class="text-style">2016 - 2020</p>
 					</div>
 					<div class="col-md-8 col-sm-12">
-						<p><span>Data Science, B.S.</span></p>
-						<p>Coursework, Coursework, Coursework, Coursework, Coursework, Coursework,
+						<p><span class="bold-small-subtitle">Data Science, B.S.</span></p>
+						<p class="text-style">Coursework, Coursework, Coursework, Coursework, Coursework, Coursework,
 							Coursework, Coursework, Coursework, Coursework, Coursework, Coursework,
 							Coursework, Coursework, Coursework, Coursework, Coursework, Coursework,
 							Coursework, Coursework, Coursework, Coursework, Coursework, Coursework,
 						</p>
-						<i class="fa fa-map-marker loc-icon"></i>
-  					Irvine, CA
+						<i class="fas fa-map-marker-alt loc-icon"></i>
+  					<span class="text-style">Irvine, CA</span>
 						<br><br>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4 col-sm-12 test">
+					<div class="col-md-4 col-sm-12">
 						<p><span class="bold-subtitle">Whitney High School</span></p>
-						<p>2012 - 2016</p>
+						<p class="text-style">2012 - 2016</p>
 					</div>
-					<div class="col-md-8 col-sm-12"><p>yolo'd it all the way</p>
-						<i class="fa fa-map-marker loc-icon"></i>
-  					Rocklin, CA
+					<div class="col-md-8 col-sm-12"><p class="text-style">yolo'd it all the way</p>
+						<i class="fas fa-map-marker-alt loc-icon"></i>
+  					<span class="text-style">Rocklin, CA</span>
 						<br><br>
 					</div>
 
@@ -103,110 +124,190 @@
 				<div class="row">
 					<div class="col-md-4 subtitle">Experience</div>
 				</div>
+				<br>
+				<div class="row">
+					<div class="col-md-4 col-sm-12 test">
+						<p><span class="bold-subtitle">Institute for Genomics and Bioinformatics</span></p>
+						<p class="text-style">Sep 2018 - Present</p>
+					</div>
+					<div class="col-md-8 col-sm-12">
+						<p><span class="bold-small-subtitle">Research Assistant</span></p>
+						<p class="text-style">I did this and this and this and this and this and this and this and this and this 
+						   and this and this and this and this and this and this and this and this and this.</p>
+						<i class="fas fa-map-marker-alt loc-icon"></i>
+  					<span class="text-style">Irvine, CA</span>
+						<br><br>
+					</div>
+				</div>
 				<div class="row">
 					<div class="col-md-4 col-sm-12 test">
 						<p><span class="bold-subtitle">Working Memory and Plasticity Laboratory</span></p>
-						<p>Oct 2017 - Dec 2017<br>Aug 2018 - Present</p>
+						<p class="text-style">Aug 2018 - Present<br>Oct 2017 - Dec 2017</p>
 					</div>
 					<div class="col-md-8 col-sm-12">
-						<p><span>Research Assistant</span></p>
-						<p>I did this and this and this and this and this and this and this and this and this 
+						<p><span class="bold-small-subtitle">Research Assistant</span></p>
+						<p class="text-style">I did this and this and this and this and this and this and this and this and this 
 						   and this and this and this and this and this and this and this and this and this.</p>
-						<i class="fa fa-map-marker loc-icon"></i>
-  					Irvine, CA
+						<i class="fas fa-map-marker-alt loc-icon"></i>
+  					<span class="text-style">Irvine, CA</span>
 						<br><br>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-4 col-sm-12 test">
 						<p><span class="bold-subtitle">Whitney High School</span></p>
-						<p>Oct 2017 - Dec 2017<br>Aug 2018 - Present</p>
+						<p class="text-style">Aug 2015 - Dec 2015</p>
 					</div>
 					<div class="col-md-8 col-sm-12">
-						<p><span>Senior Mentor</span></p>
-						<p>I did this and this and this and this and this and this and this and this and this 
+						<p><span class="bold-small-subtitle">Senior Mentor</span></p>
+						<p class="text-style">I did this and this and this and this and this and this and this and this and this 
 						   and this and this and this and this and this and this and this and this and this.</p>
-						<i class="fa fa-map-marker loc-icon"></i>
-  					Rocklin, CA
+						<i class="fas fa-map-marker-alt loc-icon"></i>
+  					<span class="text-style">Rocklin, CA</span>
 						<br><br>
 					</div>
 				</div>
-				<!-- ADD Links to CV, Cover Letter and main resume-->
+				<br>
 			</div>
 		</div>
 		
 		<div class="row tinted-back-bar">
-			<div class="container">
+			<div class="limit-container container">
 				<div class="row">
 					<div class="title">Abilities</div>
 				</div>
+				<hr>
 				<div class="row">
 					<div class="col-md-4 subtitle">Skills</div>
 				</div>
-				<div class="row">
+				<br>
+				<div class="row text-style">
 					<div class="col-md-6">
 						<div class="col-md-8 nopadding tools-subcats">
-							Python
+							Python (Pandas, NumPy)
 							<br>C++
 							<br>HTML/CSS
 						</div>
 						<div class="col-md-4 nopadding tools-subcats">
-							5 stars
-							<br>4 stars
-							<br>4 stars
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<br>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<br>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
 						</div>
 					</div>
 					<div class="col-md-6 tools-list">
 						<div class="col-md-8 nopadding tools-subcats">
-							Jupyter Notebook
-							<br>Pandas
-							<br>NumPy
+							R
+							<br>SQL
 						</div>
 						<div class="col-md-4 nopadding tools-subcats">
-							5 stars
-							<br>4 stars
-							<br>4 stars
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="far fa-circle loc-icon"></i>
+							<i class="far fa-circle loc-icon"></i>
+							<br>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="far fa-circle loc-icon"></i>
+							<i class="far fa-circle loc-icon"></i>
+							<i class="far fa-circle loc-icon"></i>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-4 subtitle">Tools</div>
 				</div>
-				<div class="row">
+				<br>
+				<div class="row text-style">
 					<div class="col-md-6">
 						<div class="col-md-8 nopadding tools-subcats">
 							Sublime Text
-							<br>Orange3
 							<br>IDLE
-							<br>Linux
+							<br>Git
+							<br>Orange3
 						</div>
 						<div class="col-md-4 nopadding tools-subcats">
-							5 stars
-							<br>4 stars
-							<br>4 stars
-							<br>4 Stars
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<br>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<br>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="far fa-circle loc-icon"></i>
+							<br>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="far fa-circle loc-icon"></i>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="col-md-8 nopadding tools-subcats">
-							Git
-							<br>MacOS
+							MacOS
 							<br>Windows
+							<br>Linux
 						</div>
 						<div class="col-md-4 nopadding tools-subcats">
-							5 stars
-							<br>4 stars
-							<br>4 stars
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<br>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="far fa-circle loc-icon"></i>
+							<br>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="fas fa-circle loc-icon"></i>
+							<i class="far fa-circle loc-icon"></i>
+							<i class="far fa-circle loc-icon"></i>
 						</div>
 					</div>
 				</div>
+				<br>
+				<br>
+				<br>
 			</div>
 		</div>
 
 		<div class="row gray-back-bar">
-			<div class="container">
+			<div class="limit-container footer container">
 				<div class="row">
 					<div id="contact">Contact</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12" align="center">
+						<p id="contact-msg">Get in touch if you have any suggestions or exciting ideas!</p>
+					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12 col-sm-24 icon-footer" align="center">
@@ -226,13 +327,14 @@
 						<img class="icon" src="icons/Instagram.png" alt="My Instagram link">
 						</a>
 					</div>
-					<div class="row space"></div>
-					<div class="row">
-    				<div class="col footer-text" align="center">Made by Caleb Pitts 2018</div>
-  				</div>
 				</div>
+				<div class="row"><br><br></div>
+				<div class="row">
+							<p class="col footer-text" align="center">Caleb Pitts 2018</p>
+  				</div>
 			</div>
 		</div>
-		
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
+		<script src="interactive-script.js"></script>
 	</body>
 </html>
