@@ -2,21 +2,64 @@
 <html>
 	<head>
 		<title>Caleb Pitts</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" href="styles.css">
+		<!-- Meta tags -->
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ -->
+		<!-- Latest Bootsrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		
+		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+		
+		<!-- Personal CSS -->
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
+		<!-- navbar-custom????? -->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark d-md-none">
+      <a class="navbar-brand" href="#">Caleb Pitts</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Abilities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        </form>
+      </div>
+    </nav>
+
 		<!-- Side navigation -->
-		<div class="sidenav sidenav-text">
-		  <a href="#"><span>Profile</span></a>
-		  <a href="#"><span>Projects</span></a>
-		  <a href="#"><span>Experiences</span></a>
-		  <a href="#"><span>Abilities</span></a>
-		  <a href="#"><span>Contacts</span></a>
+		<div class="sidenav sidenav-text"> <!-- sidenav-text -->
+		  <a class="animate" href="#">Profile</a>
+		  <a class="animate" href="#">Projects</a>
+		  <a class="animate" href="#">Experiences</a>
+		  <a class="animate" href="#">Abilities</a>
+		  <a class="animate" href="#">Contact</a>
+		  <!-- Scroll Indicator -->
 		</div>
+
+		<div class="scroll-indicator"> </div>
+
+
 
 		<div class="row front-page">
 			<div class="container">
@@ -24,25 +67,28 @@
 					<div class="col-12 space"></div>
 				</div>
 				<div class="row">
-					<div class="main-title">Hello World, I'm Caleb.</div>
+					<div class="col main-title"><h1>Hello World, I'm Caleb.</h1></div>
 				</div>
 			</div>
 		</div>
 
+		<!-- Down Arrow -->
+		<div class="arrow bounce"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></div>
+
 		<div class="row white-back-bar">
 			<div class="limit-container container">
 				<div class="row">
-					<div class="title">Profile</div>
+					<div class="col title">Profile</div>
 				</div>
 				<hr>
 				<div class="row">
-					<div class="col-md-3 col-sm-12 no-rightpadding">
+					<div class="col-lg-4 col-md-12">
 						<p class="subtitle">About Me</p>
 						<p class="text-descriptive text-style">I am an aspiring Data Scientist. I'm also a 3rd year Data Science major at UC Irvine. I look for ways to make sense of the world with data. One independent project I completed was a python script that determines the overall sentiment of comment sections on YouTube videos. My goal is to create better applications that provide clarity in complicated situations.
 						</p>
 					</div>
-					<img class="col-md-6 col-sm-12 profile-pic nopadding" src="images/profile-pic.jpg" alt="Profile Image">
-					<div class="col-md-3 col-sm-12 about">
+					<img class="col-lg-4 col-md-12 profile-pic nopadding" src="images/profile-pic.jpg" alt="Profile Image">
+					<div class="col-lg-4 col-md-12 about">
 						<p class="subtitle">Details</p>
 						<p class="text-style"><span class="bold-subtitle">Name</span><br>Caleb Pitts</p>
 						<p class="text-style"><span class="bold-subtitle">Location</span><br><i class="fas fa-map-marker-alt loc-icon"></i> Irvine, CA</p>
@@ -61,30 +107,30 @@
 		<div class="row tinted-back-bar">
 			<div class="limit-container container">
 				<div class="row">
-					<div class="title">Projects</div>
+					<div class="col title">Projects</div>
 				</div>
 				<hr>
 				<div class="row">
-					<div class="col-md-4 project-graphic">project 1</div>
-					<div class="col-md-4 project-graphic">project 2</div>
-					<div class="col-md-4 project-graphic">project 3</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 project-graphic">project 4</div>
-					<div class="col-md-4 project-graphic">project 5</div>
-					<div class="col-md-4 project-graphic">project 6</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 project-graphic">project 1</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 project-graphic">project 2</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 project-graphic">project 3</div>
+				<!-- </div> -->
+				<!-- <div class="row"> -->
+					<div class="col-lg-4 col-md-6 col-sm-12 project-graphic">project 4</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 project-graphic">project 5</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 project-graphic">project 6</div>
 				</div>
 			</div>
-			<br>
-			<br>
-			<br>
-			<br>
+			<div class="row">
+				<br>
+				<br>
+			</div>
 		</div>
 
 		<div class="row white-back-bar">
 			<div class="limit-container container">
 				<div class="row">
-					<div class="title">Experiences</div>
+					<div class="col title">Experiences</div>
 				</div>
 				<hr>
 				<div class="row">
@@ -92,11 +138,11 @@
 				</div>
 				<br>
 				<div class="row">
-					<div class="col-md-4 col-sm-12 test">
+					<div class="col-lg-4 col-md-12 test">
 						<p><span class="bold-subtitle">University of California, Irvine</span></p>
 						<p class="text-style">2016 - 2020</p>
 					</div>
-					<div class="col-md-8 col-sm-12">
+					<div class="col-lg-8 col-md-12">
 						<p><span class="bold-small-subtitle">Data Science, B.S.</span></p>
 						<p class="text-style">Coursework, Coursework, Coursework, Coursework, Coursework, Coursework,
 							Coursework, Coursework, Coursework, Coursework, Coursework, Coursework,
@@ -109,11 +155,11 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4 col-sm-12">
+					<div class="col-lg-4 col-md-12">
 						<p><span class="bold-subtitle">Whitney High School</span></p>
 						<p class="text-style">2012 - 2016</p>
 					</div>
-					<div class="col-md-8 col-sm-12"><p class="text-style">yolo'd it all the way</p>
+					<div class="col-lg-8 col-md-12"><p class="text-style">yolo'd it all the way</p>
 						<i class="fas fa-map-marker-alt loc-icon"></i>
   					<span class="text-style">Rocklin, CA</span>
 						<br><br>
@@ -126,11 +172,11 @@
 				</div>
 				<br>
 				<div class="row">
-					<div class="col-md-4 col-sm-12 test">
+					<div class="col-lg-4 col-md-12 test">
 						<p><span class="bold-subtitle">Institute for Genomics and Bioinformatics</span></p>
 						<p class="text-style">Sep 2018 - Present</p>
 					</div>
-					<div class="col-md-8 col-sm-12">
+					<div class="col-lg-8 col-md-12">
 						<p><span class="bold-small-subtitle">Research Assistant</span></p>
 						<p class="text-style">I did this and this and this and this and this and this and this and this and this 
 						   and this and this and this and this and this and this and this and this and this.</p>
@@ -140,11 +186,11 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4 col-sm-12 test">
+					<div class="col-lg-4 col-md-12 test">
 						<p><span class="bold-subtitle">Working Memory and Plasticity Laboratory</span></p>
 						<p class="text-style">Aug 2018 - Present<br>Oct 2017 - Dec 2017</p>
 					</div>
-					<div class="col-md-8 col-sm-12">
+					<div class="col-lg-8 col-md-12">
 						<p><span class="bold-small-subtitle">Research Assistant</span></p>
 						<p class="text-style">I did this and this and this and this and this and this and this and this and this 
 						   and this and this and this and this and this and this and this and this and this.</p>
@@ -154,11 +200,11 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4 col-sm-12 test">
+					<div class="col-lg-4 col-md-12 test">
 						<p><span class="bold-subtitle">Whitney High School</span></p>
 						<p class="text-style">Aug 2015 - Dec 2015</p>
 					</div>
-					<div class="col-md-8 col-sm-12">
+					<div class="col-lg-8 col-md-12">
 						<p><span class="bold-small-subtitle">Senior Mentor</span></p>
 						<p class="text-style">I did this and this and this and this and this and this and this and this and this 
 						   and this and this and this and this and this and this and this and this and this.</p>
@@ -172,9 +218,9 @@
 		</div>
 		
 		<div class="row tinted-back-bar">
-			<div class="limit-container container">
+			<div class="limit-container container-fluid">
 				<div class="row">
-					<div class="title">Abilities</div>
+					<div class="col title">Abilities</div>
 				</div>
 				<hr>
 				<div class="row">
@@ -182,13 +228,13 @@
 				</div>
 				<br>
 				<div class="row text-style">
-					<div class="col-md-6">
-						<div class="col-md-8 nopadding tools-subcats">
+					<!-- <div class="col-md-6 col-sm-12"> -->
+						<div class="col-lg-3 col-md-6 col-xs-3">
 							Python (Pandas, NumPy)
 							<br>C++
 							<br>HTML/CSS
 						</div>
-						<div class="col-md-4 nopadding tools-subcats">
+						<div class="col-lg-3 col-md-6 col-xs-3">
 							<i class="fas fa-circle loc-icon"></i>
 							<i class="fas fa-circle loc-icon"></i>
 							<i class="fas fa-circle loc-icon"></i>
@@ -207,13 +253,13 @@
 							<i class="fas fa-circle loc-icon"></i>
 							<i class="fas fa-circle loc-icon"></i>
 						</div>
-					</div>
-					<div class="col-md-6 tools-list">
-						<div class="col-md-8 nopadding tools-subcats">
+					<!-- </div> -->
+					<!-- <div class="col-md-6 col-sm-12 tools-list"> -->
+						<div class="col-lg-3 col-md-6 col-xs-3">
 							R
 							<br>SQL
 						</div>
-						<div class="col-md-4 nopadding tools-subcats">
+						<div class="col-lg-3 col-md-6 col-xs-3">
 							<i class="fas fa-circle loc-icon"></i>
 							<i class="fas fa-circle loc-icon"></i>
 							<i class="fas fa-circle loc-icon"></i>
@@ -226,21 +272,21 @@
 							<i class="far fa-circle loc-icon"></i>
 							<i class="far fa-circle loc-icon"></i>
 						</div>
-					</div>
+					<!-- </div> -->
 				</div>
 				<div class="row">
 					<div class="col-md-4 subtitle">Tools</div>
 				</div>
 				<br>
 				<div class="row text-style">
-					<div class="col-md-6">
-						<div class="col-md-8 nopadding tools-subcats">
+					<!-- <div class="col-md-6 project-graphic"> -->
+						<div class="col-lg-3 col-md-6 col-xs-3">
 							Sublime Text
 							<br>IDLE
 							<br>Git
 							<br>Orange3
 						</div>
-						<div class="col-md-4 nopadding tools-subcats">
+						<div class="col-lg-3 col-md-6 col-xs-3">
 							<i class="fas fa-circle loc-icon"></i>
 							<i class="fas fa-circle loc-icon"></i>
 							<i class="fas fa-circle loc-icon"></i>
@@ -265,14 +311,14 @@
 							<i class="fas fa-circle loc-icon"></i>
 							<i class="far fa-circle loc-icon"></i>
 						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="col-md-8 nopadding tools-subcats">
+					<!-- </div> -->
+					<!-- <div class="col-md-6"> -->
+						<div class="col-lg-3 col-md-6 col-xs-3">
 							MacOS
 							<br>Windows
 							<br>Linux
 						</div>
-						<div class="col-md-4 nopadding tools-subcats">
+						<div class="col-lg-3 col-md-6 col-xs-3">
 							<i class="fas fa-circle loc-icon"></i>
 							<i class="fas fa-circle loc-icon"></i>
 							<i class="fas fa-circle loc-icon"></i>
@@ -291,18 +337,16 @@
 							<i class="far fa-circle loc-icon"></i>
 							<i class="far fa-circle loc-icon"></i>
 						</div>
-					</div>
+					<!-- </div> -->
 				</div>
-				<br>
-				<br>
-				<br>
+				<div class="row padding"></div>
 			</div>
 		</div>
 
 		<div class="row gray-back-bar">
 			<div class="container">
 				<div class="row">
-					<div id="contact">Contact</div>
+					<div class="col contact">Contact</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12" align="center">
@@ -334,7 +378,14 @@
   				</div>
 			</div>
 		</div>
-		<script src="https://code.jquery.com/jquery-latest.js"></script>
+
+		<!-- jQuery, Popper.js, and Bootstrap JS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		
+		<!-- Personal JS Script -->
 		<script src="interactive-script.js"></script>
 	</body>
 </html>
