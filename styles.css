@@ -18,15 +18,15 @@ html, body {
 @media (max-width: 575.98px) 
 { 
 	.abilities{ 
-		margin-left:8vw;
-  		margin-right:8vw;
+		margin-left:7vw;
+  		margin-right:7vw;
   		padding-left:0;
   		padding-right:0; 
     } 
 
     .limit-container {
-	margin-left:8vw;
-  	margin-right:8vw;
+	margin-left:0;
+  	margin-right:0;
   	padding-left:0;
   	padding-right:0;
 	}
@@ -36,23 +36,43 @@ html, body {
 @media (min-width: 768px) 
 { 
 	.abilities{ 
-		margin-left:22vw;
-  		margin-right:22vw;
+		margin-left:auto;
+  		margin-right:auto;
+  		padding-left:0;
+  		padding-right:0;
+  		width:55%; 
+    } 
+
+    .limit-container {
+		margin-left:auto;
+	  	margin-right:auto;
+	  	padding-left:0;
+	  	padding-right:0;
+	  	width: 60%;
+	}
+}
+
+.text-align {
+	text-align: center;
+}
+
+/* Size Extra Large */
+/*@media (min-width: 1200px) 
+{ 
+	.abilities{ 
+		margin-left:auto;
+  		margin-right:auto;
   		padding-left:0;
   		padding-right:0; 
     } 
 
     .limit-container {
-		margin-left:20vw;
-	  	margin-right:20vw;
+		margin-left:auto;
+	  	margin-right:auto;
 	  	padding-left:0;
 	  	padding-right:0;
 	}
-}
-
-.limit {
-	max-width: 700px;
-}
+}*/
 
 
 .big-title {
