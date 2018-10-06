@@ -1,15 +1,11 @@
 <!Doctype html>
 <html>
 	<head>
-		<title>Caleb Pitts</title>
 		<!-- Meta tags -->
 		<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
- -->
-		<!-- Latest Bootsrap CSS -->
+		<!-- Latest Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,11 +16,14 @@
 		
 		<!-- Personal CSS -->
 		<link rel="stylesheet" href="styles.css">
+
+		<title>Caleb Pitts | Interactive Resume</title>
 	</head>
+
 	<body>
-		<!-- navbar-custom????? -->
+		<!-- Navbar MOBILE -->
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark d-md-none">
-      <a class="navbar-brand" href="#">Caleb Pitts</a>
+      <a class="navbar-brand mobile-header-text" href="#">Caleb Pitts</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,23 +42,20 @@
             <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
-        </form>
       </div>
     </nav>
 
-		<!-- Side navigation -->
-		<div class="sidenav sidenav-text"> <!-- sidenav-text -->
-		  <a class="animate" href="#">Profile</a>
-		  <a class="animate" href="#">Projects</a>
-		  <a class="animate" href="#">Experiences</a>
-		  <a class="animate" href="#">Abilities</a>
-		  <a class="animate" href="#">Contact</a>
-		  <!-- Scroll Indicator -->
+		<!-- Side Navbar DESKTOP -->
+		<div class="d-none d-md-block">
+			<div class="sidenav sidenav-text"> <!-- sidenav-text -->
+			  <a class="animate" href="#">Profile</a>
+			  <a class="animate" href="#">Projects</a>
+			  <a class="animate" href="#">Experiences</a>
+			  <a class="animate" href="#">Abilities</a>
+			  <a class="animate" href="#">Contact</a>
+			</div>
+			<div class="scroll-indicator"> </div>
 		</div>
-
-		<div class="scroll-indicator"> </div>
-
-
 
 		<div class="row front-page">
 			<div class="container">
@@ -67,7 +63,7 @@
 					<div class="col-12 space"></div>
 				</div>
 				<div class="row">
-					<div class="col main-title"><h1>Hello World, I'm Caleb.</h1></div>
+					<div class="col title-moniter big-title">Hello World, I'm Caleb.</div>
 				</div>
 			</div>
 		</div>
@@ -75,8 +71,9 @@
 		<!-- Down Arrow -->
 		<div class="arrow bounce"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></div>
 
+		<!-- Profile Section -->
 		<div class="row white-back-bar">
-			<div class="limit-container container">
+			<div class="limit-container moniter container">
 				<div class="row">
 					<div class="col title">Profile</div>
 				</div>
@@ -84,41 +81,59 @@
 				<div class="row">
 					<div class="col-lg-4 col-md-12">
 						<p class="subtitle">About Me</p>
-						<p class="text-descriptive text-style">I am an aspiring Data Scientist. I'm also a 3rd year Data Science major at UC Irvine. I look for ways to make sense of the world with data. One independent project I completed was a python script that determines the overall sentiment of comment sections on YouTube videos. My goal is to create better applications that provide clarity in complicated situations.
+						<p class="text-descriptive text-style">I am an aspiring Data Scientist. I'm also a 3rd year Data Science major at UC Irvine. I look for ways to make sense of the world with data. When raw data is messy, I fixate myself on organzing that data in a presentable and predictable way. My goal is to create better applications that provide clarity in a complicated world.
 						</p>
 					</div>
-					<img class="col-lg-4 col-md-12 profile-pic nopadding" src="images/profile-pic.jpg" alt="Profile Image">
+					<div class="col-md-2 d-none d-md-block d-lg-none"></div>
+					<img class="col-lg-4 col-md-8 profile-pic nopadding" src="images/profile-pic.jpg" alt="Profile Image">
+					<div class="col-md-2 d-none d-md-block d-lg-none"></div>
 					<div class="col-lg-4 col-md-12 about">
-						<p class="subtitle">Details</p>
-						<p class="text-style"><span class="bold-subtitle">Name</span><br>Caleb Pitts</p>
-						<p class="text-style"><span class="bold-subtitle">Location</span><br><i class="fas fa-map-marker-alt loc-icon"></i> Irvine, CA</p>
-						
-						<p class="subtitle">Portfolio</p>
-						<div class="text-style">
-							<p><i class="fas fa-link loc-icon"></i> Resume (Coming Soon)</p>
-							<p><i class="fas fa-link loc-icon"></i> Cover Letter (Coming)</p>
-							<p><i class="fas fa-link loc-icon"></i> CV (Coming Soon)</p>
+						<div class="row">
+						<div class="col-lg-12 col-md-6">
+							<p class="subtitle">Details</p>
+							<p class="text-style"><span class="bold-subtitle">Name</span><br>	Caleb Pitts</p>
+							<p class="text-style"><span class="bold-subtitle">Location</span><br>	<i class="fas fa-map-marker-alt loc-icon"></i> Irvine, CA</p>
 						</div>
+						<div class="col-lg-12 col-md-6">
+							<p class="subtitle">Portfolio</p>
+							<div class="text-style">
+								<p><i class="fas fa-link loc-icon"></i> Resume</p>
+								<p><i class="fas fa-link loc-icon"></i> Cover Letter (Coming)</p>
+								<p><i class="fas fa-link loc-icon"></i> CV (Coming Soon)</p>
+							</div>
+						</div>
+					</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<!-- Projects Section -->
 		<div class="row tinted-back-bar">
-			<div class="limit-container container">
+			<div class=" container">
 				<div class="row">
 					<div class="col title">Projects</div>
 				</div>
 				<hr>
 				<div class="row">
-					<div class="col-lg-4 col-md-6 col-sm-12 project-graphic">project 1</div>
-					<div class="col-lg-4 col-md-6 col-sm-12 project-graphic">project 2</div>
-					<div class="col-lg-4 col-md-6 col-sm-12 project-graphic">project 3</div>
-				<!-- </div> -->
-				<!-- <div class="row"> -->
-					<div class="col-lg-4 col-md-6 col-sm-12 project-graphic">project 4</div>
-					<div class="col-lg-4 col-md-6 col-sm-12 project-graphic">project 5</div>
-					<div class="col-lg-4 col-md-6 col-sm-12 project-graphic">project 6</div>
+					<div class="col-lg-4 col-md-12 project-pic project-graphic">
+						<img src="elon.jpg" alt="elon">
+					</div>
+					<div class="col-lg-4 col-md-12 project-pic project-graphic">
+						<img src="elon.jpg" alt="elon">
+					</div>
+					<div class="col-lg-4 col-md-12 project-pic project-graphic">
+						<img src="elon.jpg" alt="elon">
+					</div>
+					<div class="col-lg-4 col-md-12 project-pic project-graphic">
+						<img src="elon.jpg" alt="elon">
+					</div>
+					<div class="col-lg-4 col-md-12 project-pic project-graphic">
+						<img src="elon.jpg" alt="elon">
+					</div>
+					<div class="col-lg-4 col-md-12 project-pic project-graphic">
+						<img src="elon.jpg" alt="elon">
+					</div>
 				</div>
 			</div>
 			<div class="row">
@@ -127,8 +142,9 @@
 			</div>
 		</div>
 
+		<!-- Experience Section -->
 		<div class="row white-back-bar">
-			<div class="limit-container container">
+			<div class="limit-container moniter container">
 				<div class="row">
 					<div class="col title">Experiences</div>
 				</div>
@@ -138,7 +154,7 @@
 				</div>
 				<br>
 				<div class="row">
-					<div class="col-lg-4 col-md-12 test">
+					<div class="col-lg-4 col-md-12">
 						<p><span class="bold-subtitle">University of California, Irvine</span></p>
 						<p class="text-style">2016 - 2020</p>
 					</div>
@@ -172,7 +188,7 @@
 				</div>
 				<br>
 				<div class="row">
-					<div class="col-lg-4 col-md-12 test">
+					<div class="col-lg-4 col-md-12">
 						<p><span class="bold-subtitle">Institute for Genomics and Bioinformatics</span></p>
 						<p class="text-style">Sep 2018 - Present</p>
 					</div>
@@ -186,7 +202,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-4 col-md-12 test">
+					<div class="col-lg-4 col-md-12">
 						<p><span class="bold-subtitle">Working Memory and Plasticity Laboratory</span></p>
 						<p class="text-style">Aug 2018 - Present<br>Oct 2017 - Dec 2017</p>
 					</div>
@@ -200,7 +216,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-4 col-md-12 test">
+					<div class="col-lg-4 col-md-12">
 						<p><span class="bold-subtitle">Whitney High School</span></p>
 						<p class="text-style">Aug 2015 - Dec 2015</p>
 					</div>
@@ -217,132 +233,146 @@
 			</div>
 		</div>
 		
+		<!-- Abilities Section -->
 		<div class="row tinted-back-bar">
-			<div class="limit-container container-fluid">
+			<div class="moniter abilities container">
 				<div class="row">
 					<div class="col title">Abilities</div>
 				</div>
 				<hr>
 				<div class="row">
-					<div class="col-md-4 subtitle">Skills</div>
+					<div class="col subtitle">Skills</div>
 				</div>
 				<br>
+				<!-- <div class="limit-container"> -->
 				<div class="row text-style">
-					<!-- <div class="col-md-6 col-sm-12"> -->
-						<div class="col-lg-3 col-md-6 col-xs-3">
-							Python (Pandas, NumPy)
-							<br>C++
-							<br>HTML/CSS
-						</div>
-						<div class="col-lg-3 col-md-6 col-xs-3">
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<br>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<br>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-						</div>
-					<!-- </div> -->
-					<!-- <div class="col-md-6 col-sm-12 tools-list"> -->
-						<div class="col-lg-3 col-md-6 col-xs-3">
-							R
-							<br>SQL
-						</div>
-						<div class="col-lg-3 col-md-6 col-xs-3">
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="far fa-circle loc-icon"></i>
-							<i class="far fa-circle loc-icon"></i>
-							<br>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="far fa-circle loc-icon"></i>
-							<i class="far fa-circle loc-icon"></i>
-							<i class="far fa-circle loc-icon"></i>
-						</div>
-					<!-- </div> -->
+
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						Python
+						<br>C++
+						<br>Pandas & NumPy
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<span class="float-right">
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<br>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<br>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						</span>
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						HTML/CSS
+						<br>R
+						<br>SQL
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<span class="float-right">
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<br>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="far fa-circle loc-icon"></i>
+						<i class="far fa-circle loc-icon"></i>
+						<br>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="far fa-circle loc-icon"></i>
+						<i class="far fa-circle loc-icon"></i>
+						<i class="far fa-circle loc-icon"></i>
+						</span>
+					</div>
 				</div>
+
 				<div class="row">
-					<div class="col-md-4 subtitle">Tools</div>
+					<div class="col-md-12 subtitle">Tools</div>
 				</div>
 				<br>
 				<div class="row text-style">
-					<!-- <div class="col-md-6 project-graphic"> -->
-						<div class="col-lg-3 col-md-6 col-xs-3">
-							Sublime Text
-							<br>IDLE
-							<br>Git
-							<br>Orange3
-						</div>
-						<div class="col-lg-3 col-md-6 col-xs-3">
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<br>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<br>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="far fa-circle loc-icon"></i>
-							<br>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="far fa-circle loc-icon"></i>
-						</div>
-					<!-- </div> -->
-					<!-- <div class="col-md-6"> -->
-						<div class="col-lg-3 col-md-6 col-xs-3">
-							MacOS
-							<br>Windows
-							<br>Linux
-						</div>
-						<div class="col-lg-3 col-md-6 col-xs-3">
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<br>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="far fa-circle loc-icon"></i>
-							<br>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="fas fa-circle loc-icon"></i>
-							<i class="far fa-circle loc-icon"></i>
-							<i class="far fa-circle loc-icon"></i>
-						</div>
-					<!-- </div> -->
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						Sublime Text
+						<br>IDLE
+						<br>Git
+						<br>Orange3
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<span class="float-right">
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<br>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<br>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="far fa-circle loc-icon"></i>
+						<br>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="far fa-circle loc-icon"></i>
+						</span>
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						MacOS
+						<br>Windows
+						<br>Linux
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<span class="float-right">
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<br>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="far fa-circle loc-icon"></i>
+						<br>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="fas fa-circle loc-icon"></i>
+						<i class="far fa-circle loc-icon"></i>
+						<i class="far fa-circle loc-icon"></i>
+						</span>
+					</div>
 				</div>
 				<div class="row padding"></div>
 			</div>
 		</div>
 
+		<!-- Contact/Footer Section -->
 		<div class="row gray-back-bar">
 			<div class="container">
 				<div class="row">
@@ -381,7 +411,6 @@
 
 		<!-- jQuery, Popper.js, and Bootstrap JS Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		

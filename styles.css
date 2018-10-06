@@ -1,25 +1,81 @@
-.limit-container {
-	/*max-width: 80vh;*/
+.test {
+	border: red solid 2px;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/*.limit-container {
 	margin-left:20vw;
   	margin-right:20vw;
   	padding-left:0;
   	padding-right:0;
+}*/
+
+/* Size Medium and down */
+@media (max-width: 575.98px) 
+{ 
+	.abilities{ 
+		margin-left:8vw;
+  		margin-right:8vw;
+  		padding-left:0;
+  		padding-right:0; 
+    } 
+
+    .limit-container {
+	margin-left:8vw;
+  	margin-right:8vw;
+  	padding-left:0;
+  	padding-right:0;
+	}
 }
 
-.main-title {
+/* Size Large and up */
+@media (min-width: 768px) 
+{ 
+	.abilities{ 
+		margin-left:22vw;
+  		margin-right:22vw;
+  		padding-left:0;
+  		padding-right:0; 
+    } 
+
+    .limit-container {
+		margin-left:20vw;
+	  	margin-right:20vw;
+	  	padding-left:0;
+	  	padding-right:0;
+	}
+}
+
+.limit {
+	max-width: 700px;
+}
+
+
+.big-title {
 	text-align: center;
-	font-size: 80px;
+	font-size: 63px;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+.small-title {
+	text-align: center;
+	font-size: 30px;
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 }
 
 /* Typing Effect*/
-@-webkit-keyframes typing { from { width: 0; } }
+/*@-webkit-keyframes typing { from { width: 0; } }
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 
 .main-title h1 { 
-	/*font: bold 300% Consolas, Monaco, monospace;*/
 	text-align: center;
 	border-right: .1em solid black;
 	width: 40em; 
@@ -28,7 +84,7 @@
 	overflow: hidden;
 	-webkit-animation: typing 7s steps(23, end),
 	           blink-caret .5s step-end infinite alternate;
-}
+}*/
 
 /* Arrow Down */
 .words {
@@ -161,7 +217,7 @@ i {
 .scroll-indicator {
 	content:"";
 	position:fixed;
-	right:25px;
+	right:23px;
 	top: 50px;
 	height: 0;
 	width:4px;
@@ -235,7 +291,7 @@ i {
 
 .project-graphic {
 	border: solid red 1px;
-	height:200px;
+
 }
 
 .gray-back-bar {
@@ -252,11 +308,20 @@ hr {
     clear:both;
 }
 
+.project-pic {
+	height: 70%;
+	max-width: 400px;
+	display: block;
+	padding: 5px;
+	margin: auto;
+	overflow:auto;
+}
+
 .profile-pic {
 	height: 70%;
+	max-width: 400px;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 	overflow:auto;
 }
 
@@ -365,6 +430,12 @@ hr {
 
 .footer-text {
 	color: black;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+.mobile-header-text {
+	color: white;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 }
