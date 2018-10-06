@@ -23,23 +23,26 @@
 	<body>
 		<!-- Navbar MOBILE -->
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark d-md-none">
-      <a class="navbar-brand mobile-header-text" href="#">Caleb Pitts</a>
+      <a class="navbar-brand mobile-header-text" href="#top">Caleb Pitts</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+        	<li class="nav-item">
+            <a class="nav-link" href="#profile">Profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Experience</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Abilities</a>
+            <a class="nav-link" href="#experience">Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#ability">Abilities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -48,16 +51,16 @@
 		<!-- Side Navbar DESKTOP -->
 		<div class="d-none d-md-block">
 			<div class="sidenav sidenav-text"> <!-- sidenav-text -->
-			  <a class="animate" href="#">Profile</a>
-			  <a class="animate" href="#">Projects</a>
-			  <a class="animate" href="#">Experiences</a>
-			  <a class="animate" href="#">Abilities</a>
-			  <a class="animate" href="#">Contact</a>
+			  <a href="#profile"><span class="animate">Profile</span></a>
+			  <a href="#projects"><span class="animate">Projects</span></a>
+			  <a href="#experience"><span class="animate">Experiences</span></a>
+			  <a href="#ability"><span class="animate">Abilities</span></a>
+			  <a href="#contact"><span class="animate">Contact</span></a>
 			</div>
 			<div class="scroll-indicator"> </div>
 		</div>
 
-		<div class="row front-page">
+		<div id="top" class="row front-page">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 space"></div>
@@ -69,9 +72,10 @@
 		</div>
 
 		<!-- Down Arrow -->
-		<div class="arrow bounce"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></div>
+		<div class="arrow bounce"><a href="#profile"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></a></div>
 
 		<!-- Profile Section -->
+		<section class="page-section" id="profile">
 		<div class="row white-back-bar">
 			<div class="limit-container moniter container">
 				<div class="row">
@@ -97,9 +101,9 @@
 						<div class="col-lg-12 col-md-6 col-sm-6 col-6">
 							<p class="subtitle">Portfolio</p>
 							<div class="text-style">
-								<p><i class="fas fa-link loc-icon"></i> Resume</p>
-								<p><i class="fas fa-link loc-icon"></i> Cover Letter (Coming)</p>
-								<p><i class="fas fa-link loc-icon"></i> CV (Coming Soon)</p>
+								<p><i class="fas fa-link loc-icon"></i> <a class="link" href="files/resume.pdf">Resume</a></p>
+								<p><i class="fas fa-link loc-icon"></i> <a class="link" href="#">Cover Letter (Coming)</a></p>
+								<p><i class="fas fa-link loc-icon"></i> <a class="link" href="#">CV (Coming Soon)</a></p>
 							</div>
 						</div>
 					</div>
@@ -108,42 +112,46 @@
 				<br>
 			</div>
 		</div>
+		</section>
 
 		<!-- Projects Section -->
+		<section class="page-section" id="projects">
 		<div class="row tinted-back-bar">
-			<div class="limit-container container">
+			<div class="limit-container moniter padding container">
 				<div class="row">
 					<div class="col title">Projects</div>
 				</div>
 				<hr>
 				<div class="row">
-					<div class="col-lg-4 col-md-12 project-pic project-graphic">
-						<img src="elon.jpg" alt="elon">
+					<div class="col-xl-4 col-lg-6 col-md-12 project-pic project-graphic">
+						<img class="img-detail" src="images/thumbs.png" alt="Sentiment Analysis Project">
 					</div>
-					<div class="col-lg-4 col-md-12 project-pic project-graphic">
-						<img src="elon.jpg" alt="elon">
+					<div class="col-xl-4 col-lg-6 col-md-12 project-pic project-graphic">
+						<img class="img-detail" src="images/ab-test.png" alt="AB Test Analysis Project">
 					</div>
-					<div class="col-lg-4 col-md-12 project-pic project-graphic">
-						<img src="elon.jpg" alt="elon">
+					<div class="col-xl-4 col-lg-6 col-md-12 project-pic project-graphic">
+						<img class="img-detail" src="images/words.png" alt="Spell Checker Project">
 					</div>
-					<div class="col-lg-4 col-md-12 project-pic project-graphic">
-						<img src="elon.jpg" alt="elon">
+					<div class="col-xl-4 col-lg-6 col-md-12 project-pic project-graphic">
+						<img class="img-detail" src="images/doctor.png" alt="No Show Appointment Dataset Analysis Project">
 					</div>
-					<div class="col-lg-4 col-md-12 project-pic project-graphic">
-						<img src="elon.jpg" alt="elon">
+					<div class="col-xl-4 col-lg-6 col-md-12 project-pic project-graphic">
+						<img class="img-detail" src="images/in-progress.png" alt="Project in progress">
 					</div>
-					<div class="col-lg-4 col-md-12 project-pic project-graphic">
-						<img src="elon.jpg" alt="elon">
+					<div class="col-xl-4 col-lg-6 col-md-12 project-pic project-graphic">
+						<img class="img-detail" src="images/in-progress.png" alt="Project in progress">
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<br>
-				<br>
+			<br>
+			<br>
+			<br>
+			<br>
 			</div>
 		</div>
+		</section>
 
 		<!-- Experience Section -->
+		<section class="page-section" id="experience">
 		<div class="row white-back-bar">
 			<div class="limit-container moniter container">
 				<div class="row">
@@ -233,8 +241,10 @@
 				<br>
 			</div>
 		</div>
+		</section>
 		
 		<!-- Abilities Section -->
+		<section class="page-section" id="ability">
 		<div class="row tinted-back-bar">
 			<div class="moniter abilities container">
 				<div class="row">
@@ -369,11 +379,13 @@
 						</span>
 					</div>
 				</div>
-				<div class="row padding"></div>
+				<div class="row row-padding"></div>
 			</div>
 		</div>
+		</section>
 
 		<!-- Contact/Footer Section -->
+		<section class="page-section" id="contact">
 		<div class="row gray-back-bar">
 			<div class="container">
 				<div class="row">
@@ -409,6 +421,7 @@
   				</div>
 			</div>
 		</div>
+		</section>
 
 		<!-- jQuery, Popper.js, and Bootstrap JS Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
