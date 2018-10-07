@@ -97,3 +97,14 @@ $('a[href*=#]:not([href=#])').click(function() {
         }
     }
 });
+
+
+// Image scroll over
+$('.img-detail').mouseover(function() {
+  $('.text').css("visibility","visible");
+});
+
+$('.img-detail').mouseout(function() {
+  $('.text').css("visibility","hidden");
+});
+

@@ -313,11 +313,7 @@ i {
 	background-size: cover;
 	background-attachment: fixed;
 	box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
-	background-image: url("images/yosemite.jpg");
-	background-position: center;
-	webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+	background-image: url("yosemite.jpg");
 }
 
 .white-back-bar {
@@ -346,7 +342,7 @@ hr {
 	height: 70%;
 	max-width: 400px;
 	display: block;
-	padding: 10px;
+	padding: 5px;
 	margin: auto;
 	overflow:auto;
 }
@@ -359,224 +355,36 @@ hr {
 	overflow:auto;
 }
 
-/* Project Overlay effects */
-/*.project-graphic1 {*/
-	/*padding-left: 15px;  
-	padding-right: 15px;*/
-/*}
-
-.overlay-effect {
-	display: none;
+.project-graphic {
+	padding-left: 15px;  
+	padding-right: 15px;
 }
 
-.project-graphic1:hover .overlay-effect {
-	opacity: 1;
-  	cursor: pointer;
+/* Creates image hover effect */
+.project-graphic:hover img {
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	opacity: 0.4;
+  	transition: .5s ease;
+  	background-color: rgba(259, 67, 95, 0.7);
+  	overflow:hidden;
 }
 
-.overlay-effect {	
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 95%;
-    background-color: rgba(188, 96, 96,0.6); /*rgba(72,81,103, 0.5); */
-/*    opacity: 0;
-    transition: .5s ease;
-    top: 9px;
-    overflow:hidden;
-}*/
-
-/*.img-detail {
+.img-detail {
 	height: 370px;
 	width: 370px;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-}*/
-
-/*.image-text {
-	position:relative;
-	bottom:30px;
-	left:0px;
-	visibility:hidden;
-	position:fixed;
-	right:23px;
-	top: 50px;
-	height: 0;
-	width:4px;
-	background:#7F4145;
-}*/
-
-/* Line in image overlay */
-	/*-webkit-animation: increase 3s;
-  	-moz-animation:    increase 3s; 
-  	-o-animation:      increase 3s; 
-  	animation:         increase 3s;*/ 
-/*
-  	animation-fill-mode: forwards;
+	-moz-transition: opacity .3s linear;
+    -webkit-transition: opacity .3s linear;
+    -ms-transition: opacity .3s linear;
+    -o-transition: opacity .3s linear;
+    transition: opacity .3s linear;
+    background-size: cover;
 }
-
-@keyframes increase {
-    100% {
-        height: 190px;
-    }
-}*/
-
-/*.align {
-	display: -webkit-flex;
-    -webkit-align-items: center; 
-    display: flex;
-    align-items: center;
-}*/
-
-
-/* SARAH IMAGE HOVER OVERLAY ANIMATION */
-.effect-sarah {
-	position: relative;
-	/*float: center;*/
-	display: inline-block;
-	overflow: hidden;
-	margin: 10px 1%;
-	min-width: 260px;
-	max-width: 400px;
-	max-height: 400px;
-	width: 48%;
-	background: #3085a3;
-	text-align: center;
-	cursor: pointer;
-}
-
-.effect-sarah img {
-	position: relative;
-	display: block;
-	min-height: 100%;
-	max-width: 100%;
-	opacity: 0.7;
-}
-
-.effect-sarah figcaption {
-	padding: 2em;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 1.25em;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.effect-sarah figcaption::before,
-.effect-sarah figcaption::after {
-	pointer-events: none;
-}
-
-.effect-sarah figcaption,
-.effect-sarah figcaption > a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-.effect-sarah figcaption > a {
-	z-index: 1000;
-	text-indent: 200%;
-	white-space: nowrap;
-	font-size: 0;
-	opacity: 0;
-}
-
-.effect-sarah h2 {
-	word-spacing: -0.15em;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-}
-
-.effect-sarah h2 span {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-}
-
-.effect-sarah h2,
-.effect-sarah p {
-	margin: 0;
-}
-
-.effect-sarah p {
-	letter-spacing: 1px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 68.5%;
-}
-
-/**/
-
-figure.effect-sarah {
-    background: #4f99dd;
-}
-
-figure.effect-sarah img {
-    max-width: none;
-    width: -webkit-calc(100% + 20px);
-    width: calc(100% + 20px);
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(-10px,0,0);
-    transform: translate3d(-10px,0,0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-figure.effect-sarah:hover img {
-    opacity: 0.4;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-}
-
-figure.effect-sarah figcaption {
-    text-align: left;
-}
-
-figure.effect-sarah h2 {
-    position: relative;
-    overflow: hidden;
-    padding: 0.5em 0;
-}
-
-figure.effect-sarah h2::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    content: '';
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-    -webkit-transform: translate3d(-100%,0,0);
-    transform: translate3d(-100%,0,0);
-}
-
-figure.effect-sarah:hover h2::after {
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-}
-
-figure.effect-sarah p {
-    padding: 1em 0;
-    opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(100%,0,0);
-    transform: translate3d(100%,0,0);
-}
-
-figure.effect-sarah:hover p {
-    opacity: 1;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-}
-/* End of hover overlay animation */
 
 .icon {
 	height: 60px;
